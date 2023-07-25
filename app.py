@@ -63,8 +63,7 @@ else:
     string = "Prediction : " + class_names[np.argmax(predictions)]
     string2 = "Confidence rate " + str(np.max(predictions[0]))
 
-    if class_names[np.argmax(predictions)] == 'Healthy':
-        st.success(string)
-    else:
-        st.warning(string)
+  
+   st.success(string)
+   st.success(string2)
 
